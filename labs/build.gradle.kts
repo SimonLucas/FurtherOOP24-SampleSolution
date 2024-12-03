@@ -69,10 +69,11 @@ sourceSets {
             setSrcDirs(emptyList<String>())
 
             // Add only your test source directory
-            srcDir("./marking-tests/test/java")
+            srcDir("./src/test/java")
         }
     }
 }
+
 
 // example of how to exclude a file or package from the main source set
 //sourceSets {
