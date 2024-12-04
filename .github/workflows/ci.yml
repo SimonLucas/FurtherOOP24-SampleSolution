@@ -42,24 +42,6 @@ jobs:
       - name: Run CK Metrics
         run: ./gradlew ckMetrics
 
-      - name: Run JaCoCo test report
-        run: ./gradlew jacocoTestReport
-
-#      - name: Run SpotBugs
-#        run: ./gradlew spotbugsMain
-
-      - name: Upload JaCoCo Coverage Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: jacoco-report
-          path: build/reports/jacoco/test/html
-
-#      - name: Upload SpotBugs Report
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: spotbugs-report
-#          path: build/reports/spotbugs/main.html
-
       - name: Upload CK Metrics Report
         uses: actions/upload-artifact@v3
         with:
